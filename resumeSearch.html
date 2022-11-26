@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./resumeSearch.css" />
+    <title>Resume</title>
+  </head>
+  <body>
+    <div id="search_tab">
+      <div id="previous-button"></div>
+      <div id="search-box">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search for keyword to filter the resume"
+          onkeyup="filterfn()"
+        />
+      </div>
+      <div id="next-button"></div>
+    </div>
+    <div id="modal" class="modal">
+      <div class="emoji-sad">
+        <div class="face">
+          <div class="eyebrow-left"></div>
+          <div class="eyebrow-right"></div>
+          <div class="eye-left"></div>
+          <div class="eye-right"></div>
+          <div class="mouth-sad"></div>
+        </div>
+      </div>
+      <div id="modal-body">No such results found</div>
+    </div>
+    <div id="resume-content">
+      <nav id="resume-header">
+        <header id="resume-header-id"></header>
+      </nav>
+      <div id="leftNav">
+        <div class="basic-info">
+          <h4>Personal Information</h4>
+          <div id="personal-info"></div>
+        </div>
+        <div class="basic-info">
+          <h4>Technical Skills</h4>
+          <div id="technical-skill"></div>
+        </div>
+        <div class="basic-info">
+          <h4>Hobbies</h4>
+          <div id="hobbies"></div>
+        </div>
+      </div>
+      <div id="main-content">
+        <div id="work-experience">
+          <h3>Work Experience In Previous Company</h3>
+          <div id="resume-main-content" class="content"></div>
+        </div>
+        <div id="projects-section">
+          <h3>Projects</h3>
+          <div id="project-Content" class="content"></div>
+        </div>
+        <div id="education-section">
+          <h3>Education</h3>
+          <div id="education-content" class="content">
+            <li id="ug"></li>
+            <li id="pu"></li>
+            <li id="highSchool"></li>
+          </div>
+        </div>
+        <div id="intern-ship-section">
+          <h3>InternShip</h3>
+          <div id="internship-content" class="content"></div>
+        </div>
+        <div id="achievements">
+          <h3>Achievements</h3>
+          <div id="achievement-content" class="content"></div>
+        </div>
+      </div>
+    </div>
+    <script src="./resumeSearch.js"></script>
+  </body>
+</html>

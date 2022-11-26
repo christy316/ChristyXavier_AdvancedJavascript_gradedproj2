@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;  
+}
+body,html {
+    padding: 0;
+    margin: 0;
+}
+
+#search_tab {
+    margin: 15px;
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#search-box input {
+    align-items: center;
+    height: 20px;
+    width: 150%;
+}
+#next-button{
+    margin-left: 20%;
+}
+#previous-button{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.modal{
+    position: fixed;
+    display: flex;
+    top: 20%;
+    left: 50%;
+    transform: translate(-40%,10%);
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    height: 150px;
+    max-width: 60%;
+    box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.4);
+   
+}
+
+#resume-header{
+    width: 100%;
+    background-color: rgb(154, 250, 220);
+}
+#modal-body{
+    padding: 20px;
+    margin: 20px;
+    margin-left: 40%;
+    text-align: center;
+    position: fixed;
+}
+
+#resume-header h1,h4{
+    text-align: center;
+}
+#resume-content {
+    width: 80%;
+    box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 10%;
+    margin: 0;
+}
+
+#resume-content #leftNav {
+    background-color: rgb(247, 203, 235);
+    width: 15%;
+    min-width: 150px;
+    height: 70%;
+    margin: 20px;
+    text-align: right;
+    padding: 15px;
+}
+#resume-content #leftNav h4{
+    text-align: left;
+}
+
+
+.basic-info{
+    margin: 0;
+    padding: 0;
+}
+#main-content{
+    width: 80%;
+}
+.content{
+    margin-left: 30px;
+}
+.emoji-sad {
+    position: fixed;
+    width: 20%;
+    height: 120px;
+    background: black;
+    border-radius: 50%;
+    margin-top: 2%;
+    margin-left: 17%;
+  }
+  .face {
+    width: inherit;
+    height: inherit;
+  }
+  
+  .eye-left {
+    position: absolute;
+    width: 12%;
+    height: 12px;
+    background: white;
+    left: 25px;
+    top: 40px;
+    border-radius: 50%;
+  }
+  
+  .eye-right {
+    position: absolute;
+    width: 12%;
+    height: 12px;
+    background: white;
+    right: 25px;
+    top: 40px;
+    border-radius: 50%;
+  }
+
+  .mouth-sad {
+    position: absolute;
+    width: 70%;
+    height: 80px;
+    border: 6px solid transparent;
+    top: 70px;
+    left: 16px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border-top-color: white;
+  }  
