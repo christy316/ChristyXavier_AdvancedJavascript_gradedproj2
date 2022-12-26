@@ -1,139 +1,107 @@
-*{
-    box-sizing: border-box;  
-}
-body,html {
-    padding: 0;
-    margin: 0;
-}
-
-#search_tab {
-    margin: 15px;
-    padding: 15px;
+body{
     width: 100%;
+    height: 100%;
+    margin: 0%;
+}
+#options{
     display: flex;
-    align-items: center;
-}
-
-#search-box input {
-    align-items: center;
-    height: 20px;
-    width: 150%;
-}
-#next-button{
-    margin-left: 20%;
-}
-#previous-button{
-    margin-left: 20%;
-    margin-right: 20%;
-}
-.modal{
-    position: fixed;
-    display: flex;
-    top: 20%;
-    left: 50%;
-    transform: translate(-40%,10%);
-    border: 1px solid black;
-    border-radius: 10px;
-    z-index: 10;
-    background-color: white;
-    width: 500px;
-    height: 150px;
-    max-width: 60%;
-    box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.4);
-   
-}
-
-#resume-header{
-    width: 100%;
-    background-color: rgb(154, 250, 220);
-}
-#modal-body{
-    padding: 20px;
+    flex-direction: row;
+    justify-content: space-evenly;
     margin: 20px;
-    margin-left: 40%;
-    text-align: center;
-    position: fixed;
 }
-
-#resume-header h1,h4{
-    text-align: center;
+#search{
+    width: 25%;
+    font-size: medium;
+    height: 25px;
 }
-#resume-content {
+#previous, #next {
+    padding: 10px;
+    visibility: visible;
+}
+#structure{
+    height: 100%;
     width: 80%;
-    box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.4);
+    min-width: 700px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border: rgb(0, 0, 0);
+    border-radius: 5px;
+    box-shadow: 2px 2px 20px rgb(146, 141, 141);
+}
+#Header{
+    padding: 1%;
+    text-align: center;
     display: flex;
-    flex-wrap: wrap;
-    position: absolute;
-    left: 10%;
-    margin: 0;
+    flex-direction: row;
+    justify-content: right;
+    column-gap: 20%;
+    background-color: rgba(131, 232, 215, 0.374);
+}
+#Name{
+    font-size: xx-large;
+}
+#Designation{
+    margin: 0%;
 }
 
-#resume-content #leftNav {
-    background-color: rgb(247, 203, 235);
-    width: 15%;
-    min-width: 150px;
-    height: 70%;
-    margin: 20px;
-    text-align: right;
-    padding: 15px;
+.icon{
+    font-size: 100px;
 }
-#resume-content #leftNav h4{
-    text-align: left;
+#MainPage{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
 }
-
-
-.basic-info{
-    margin: 0;
-    padding: 0;
-}
-#main-content{
-    width: 80%;
-}
-.content{
-    margin-left: 30px;
-}
-.emoji-sad {
-    position: fixed;
-    width: 20%;
-    height: 120px;
-    background: black;
-    border-radius: 50%;
+#leftPage{
+    width: 25%;
+    height: 100%;
+    padding: 1%;
     margin-top: 2%;
-    margin-left: 17%;
-  }
-  .face {
-    width: inherit;
-    height: inherit;
-  }
-  
-  .eye-left {
+    margin-left: 2%;
+    background-color: rgba(241, 194, 194, 0.47);
+}
+#address{
+    padding: 5px;
+    background-color: rgb(221, 222, 223);
+}
+.objective1{
+    padding: 2%;
+}
+.objective1 h4{
+    font-size: large;
+    padding-left: 5px;
+    background-color: darkgrey;
+    margin: 2%;
+}
+.objective1 ul{
+    margin: 0%;
+}
+.detailsList li{
+    list-style: none;
+    text-align: right;
+}
+#coreDetails{
+    width: 100%;
+    margin-left: 1%;
+    margin-right: 7%;
+    text-align: justify;
+}
+.workExp h4{
+    font-size: x-large;
+    margin: 2% 0%;
+}
+.aligning{
+    text-align: justify;
+}
+#error{
     position: absolute;
-    width: 12%;
-    height: 12px;
-    background: white;
-    left: 25px;
-    top: 40px;
-    border-radius: 50%;
-  }
-  
-  .eye-right {
-    position: absolute;
-    width: 12%;
-    height: 12px;
-    background: white;
-    right: 25px;
-    top: 40px;
-    border-radius: 50%;
-  }
-
-  .mouth-sad {
-    position: absolute;
-    width: 70%;
-    height: 80px;
-    border: 6px solid transparent;
-    top: 70px;
-    left: 16px;
-    box-sizing: border-box;
-    border-radius: 50%;
-    border-top-color: white;
-  }  
+    width: 30%;
+    left: 32.5%;
+    top: 20%;
+    padding: 2%;
+    font-size: 20px;
+    display: none;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    box-shadow: 2px 2px 20px rgb(146, 141, 141);
+}
